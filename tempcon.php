@@ -1,78 +1,156 @@
 <?php
-// conversions.php
-// Temperature conversion functions
-// Supports 4 temp scales; Fahrenheit, Celsius, Kelvine and Rankine
+/**
+* temcon.php - Temperature conversion functions
+*
+* Supports 4 temp scales; Fahrenheit, Celsius, Kelvine and Rankine
+*
+* PHP version 5
+*
+* @author     Ron Nims <rleenims@gmail.com>
+* @copyright  2017 Ron Nims
+*/
 
-
-function convertFtoC($tempValue) {
-        // Fahrenheit to Celsius
-        $calcTemp = ($tempValue - 32) * (5 / 9);         
+/**
+* Convert Fahrenheit to Celsius, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertFtoC($tempValue)
+{
+        $calcTemp = ($tempValue - 32) * (5 / 9);
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertFtoK($tempValue) {
-        // Fahrenheit to Kelvin
+/**
+* Convert Fahrenheit to Kelvin, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertFtoK($tempValue)
+{
         $calcTemp = ($tempValue + 459.67) * (5 / 9);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertFtoR($tempValue) {
-        // Fahrenheit to Rankine
+/**
+* Convert Fahrenheit to Rankine, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertFtoR($tempValue)
+{
         $calcTemp = ($tempValue + 459.67);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertCtoF($tempValue) {
-        // Celsius to Fahrenheit
+/**
+* Convert Celsius to Fahrenheit, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertCtoF($tempValue)
+{
         $calcTemp = ($tempValue  * (9 / 5) ) + 32;         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertCtoK($tempValue) {
-        // Celsius to Kelvin
+/**
+* Convert Celsius to Kelvin, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertCtoK($tempValue)
+{
         $calcTemp = ($tempValue + 273.15);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertCtoR($tempValue) {
-        // Celsius to Rankine
+/**
+* Convert Celsius to Rankine, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertCtoR($tempValue)
+{
         $calcTemp = ($tempValue + 273.15) * (9 / 5);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertKtoF($tempValue) {
-        // Kelvin to Fahrenheit
+/**
+* Convert Kelvin to Fahrenheit, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertKtoF($tempValue)
+{
         $calcTemp = ($tempValue * (9 / 5) ) - 459.67;         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertKtoC($tempValue) {
-        // Kelvin to Celsius
+/**
+* Convert Kelvin to Celsius, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertKtoC($tempValue)
+{
         $calcTemp = $tempValue - 273.15;         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertKtoR($tempValue) {
-        // Kelvin to Rankine
+/**
+* Convert Kelvin to Rankine, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertKtoR($tempValue)
+{
         $calcTemp = $tempValue * (9 / 5);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertRtoF($tempValue) {
-        // Rankine to Fahrenheit
+/**
+* Convert Rankine to Fahrenheit, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertRtoF($tempValue)
+{
         $calcTemp = $tempValue - 459.67 ;         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertRtoC($tempValue) {
-        // Rankine to Celsius
+/**
+* Convert Rankine to Celsius, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertRtoC($tempValue)
+{
         $calcTemp = ($tempValue - 491.67) * (5 / 9);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
-function convertRtoK($tempValue) {
-        // Rankine to Kelvin
+/**
+* Convert Rankine to Kelvin, round to 2 decimal places
+* @param float $tempValue
+* @return float
+*/
+function convertRtoK($tempValue)
+{
         $calcTemp = $tempValue * (5 / 9);         
+        $calcTemp = round($calcTemp, 2);
         return $calcTemp;            
 }
 
