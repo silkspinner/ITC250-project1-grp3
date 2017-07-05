@@ -17,9 +17,7 @@
  */
 function convertFtoC($tempValue)
 {
-        $calcTemp = ($tempValue - 32) * (5 / 9);
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round((($tempValue - 32) * (5 / 9)), 2);            
 }
 
 /**
@@ -29,9 +27,7 @@ function convertFtoC($tempValue)
  */
 function convertFtoK($tempValue)
 {
-        $calcTemp = ($tempValue + 459.67) * (5 / 9);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round((($tempValue + 459.67) * (5 / 9)), 2);            
 }
 
 /**
@@ -41,9 +37,7 @@ function convertFtoK($tempValue)
  */
 function convertFtoR($tempValue)
 {
-        $calcTemp = ($tempValue + 459.67);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round(($tempValue + 459.67), 2);            
 }
 
 /**
@@ -53,9 +47,7 @@ function convertFtoR($tempValue)
  */
 function convertCtoF($tempValue)
 {
-        $calcTemp = ($tempValue  * (9 / 5) ) + 32;         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round((($tempValue  * (9 / 5) ) + 32), 2);            
 }
 
 /**
@@ -65,9 +57,7 @@ function convertCtoF($tempValue)
  */
 function convertCtoK($tempValue)
 {
-        $calcTemp = ($tempValue + 273.15);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round(($tempValue + 273.15), 2);            
 }
 
 /**
@@ -77,9 +67,7 @@ function convertCtoK($tempValue)
  */
 function convertCtoR($tempValue)
 {
-        $calcTemp = ($tempValue + 273.15) * (9 / 5);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return (($tempValue + 273.15) * (9 / 5));            
 }
 
 /**
@@ -89,9 +77,7 @@ function convertCtoR($tempValue)
  */
 function convertKtoF($tempValue)
 {
-        $calcTemp = ($tempValue * (9 / 5) ) - 459.67;         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round((($tempValue * (9 / 5) ) - 459.67), 2);            
 }
 
 /**
@@ -101,9 +87,7 @@ function convertKtoF($tempValue)
  */
 function convertKtoC($tempValue)
 {
-        $calcTemp = $tempValue - 273.15;         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round(($tempValue - 273.15), 2);            
 }
 
 /**
@@ -113,9 +97,7 @@ function convertKtoC($tempValue)
  */
 function convertKtoR($tempValue)
 {
-        $calcTemp = $tempValue * (9 / 5);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round(($tempValue * (9 / 5)), 2);            
 }
 
 /**
@@ -125,9 +107,7 @@ function convertKtoR($tempValue)
  */
 function convertRtoF($tempValue)
 {
-        $calcTemp = $tempValue - 459.67 ;         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round(($tempValue - 459.67), 2);            
 }
 
 /**
@@ -137,9 +117,7 @@ function convertRtoF($tempValue)
  */
 function convertRtoC($tempValue)
 {
-        $calcTemp = ($tempValue - 491.67) * (5 / 9);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round((($tempValue - 491.67) * (5 / 9)), 2);            
 }
 
 /**
@@ -149,8 +127,6 @@ function convertRtoC($tempValue)
  */
 function convertRtoK($tempValue)
 {
-        $calcTemp = $tempValue * (5 / 9);         
-        $calcTemp = round($calcTemp, 2);
-        return $calcTemp;            
+        return round(($tempValue * (5 / 9)), 2);            
 }
 
