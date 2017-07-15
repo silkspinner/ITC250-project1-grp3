@@ -11,6 +11,16 @@
  */
 
 /**
+ * Convert Fahrenheit to Fahrenheit, round to 2 decimal places
+ * @param float $tempValue
+ * @return float
+ */
+function convertFtoF($tempValue)
+{
+        return round($tempValue, 2);            
+}
+
+/**
  * Convert Fahrenheit to Celsius, round to 2 decimal places
  * @param float $tempValue
  * @return float
@@ -48,6 +58,16 @@ function convertFtoR($tempValue)
 function convertCtoF($tempValue)
 {
         return round((($tempValue  * (9 / 5) ) + 32), 2);            
+}
+
+/**
+ * Convert Celsius to Celsius, round to 2 decimal places
+ * @param float $tempValue
+ * @return float
+ */
+function convertCtoC($tempValue)
+{
+        return round($tempValue, 2);            
 }
 
 /**
@@ -91,6 +111,16 @@ function convertKtoC($tempValue)
 }
 
 /**
+ * Convert Kelvin to Kelvin, round to 2 decimal places
+ * @param float $tempValue
+ * @return float
+ */
+function convertKtoK($tempValue)
+{
+        return round($tempValue, 2);            
+}
+
+/**
  * Convert Kelvin to Rankine, round to 2 decimal places
  * @param float $tempValue
  * @return float
@@ -128,5 +158,15 @@ function convertRtoC($tempValue)
 function convertRtoK($tempValue)
 {
         return round(($tempValue * (5 / 9)), 2);            
+}
+
+/**
+ * Convert Rankine to Rankine, round to 2 decimal places
+ * @param float $tempValue
+ * @return float
+ */
+function convertRtoR($tempValue)
+{
+        return round($tempValue, 2);            
 }
 
