@@ -69,7 +69,6 @@ aside {
 #button-img {
     max-width: 225px;
     width: 100%;
-
 }
 
 input[type=radio]{
@@ -79,6 +78,7 @@ input[type=radio]{
 input[type=number]{
     width: 5em;
     text-align: center;
+    border: solid 1px #ddd; /*nbrown added*/
 } 
 
 @media screen and (max-width:680px) {
