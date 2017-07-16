@@ -1,0 +1,99 @@
+/* ITC250 styles */
+html {
+    background-color:#ccc;
+    font-family: 'Shanti', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Suez+One', cursive;
+}
+
+div.wrapper {
+    background-color:#e3f3f9;
+    width:90%;
+    max-width: 680px;
+    margin:auto;
+    padding: 1.5em;
+    border:1px solid cornflowerblue;
+    text-align: center;
+}
+
+img.icon {
+    height:50px;
+    padding: 0 .5em;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+clear-float {
+    clear: both;
+}
+
+#body-flex {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin:auto;
+}
+
+#body-content {
+    padding: 1em;
+    max-width: 46%;
+    text-align: left;
+}
+
+aside {
+    padding: 1em;
+    max-width: 46%;
+    text-align: left;
+}
+
+#tempout {
+    width: 100px;
+    min-width: 80px;
+    background-color:#fff;
+    border: solid 1px #ddd;
+    padding: 0 1em;
+}
+
+#button-div {
+    margin: 0 auto;
+
+}
+
+#button-img {
+    max-width: 225px;
+    width: 100%;
+                                 
+}
+
+input[type=radio]{
+    margin-left: 1em;
+} 
+
+input[type=number]{
+    width: 5em;
+    text-align: center;
+    border: solid 1px #ddd; /*nbrown added*/
+} 
+
+@media screen and (max-width:680px) {
+
+    #body-flex {
+        flex-direction:column;
+        align-items:center;
+     }
+
+    #body-content {
+        max-width: 92%;
+    }
+
+    aside {
+        max-width: 92%;
+    }
+}
