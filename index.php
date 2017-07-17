@@ -1,4 +1,4 @@
-Ron’s version of a working index.php
+<!--Ron’s version of a working index.php-->
 
 <!--code review completed and passed by Nicole Brown 07/16/2017-->
 <?php
@@ -105,6 +105,11 @@ echo '
     <button type="submit" name="Submit"><img src="calculate.png" alt="Calculate the converted temperature" id="button-img"></button>
     </div>
     <br />
+     <br /><br /><button type="button"><a href="https://github.com/silkspinner/ITC250-project1-grp3">Source Code</a></button>
+        </form>   
+    </body>
+</html>
+
 </form>
 
 <h3>' . $message . '</h3>
