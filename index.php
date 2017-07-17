@@ -106,6 +106,9 @@ echo '
     </div>
     <br />
      <br /><br /><button type="button"><a href="https://github.com/silkspinner/ITC250-project1-grp3">Source Code</a></button>
+     
+     <br /><br /><button type="button"><a href="https://docs.google.com/document/d/1Atyl8zth_1knFwC82i9RD6V_lsRGakXGhPikRu71zZs/edit?usp=sharing">Project Document</a></button>
+     
         </form>   
     </body>
 </html>
